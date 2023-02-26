@@ -27,22 +27,22 @@ import homeIcon from '../assets/svgs/home-icon.svg';
 import icon2 from '../assets/svgs/icon2.svg';
 import backgroundImage from '../assets/svgs/background-image.svg';
 
-function Home() {
+function MediumScreen() {
   return (
     <div className=" w-full h-auto bg-gray-900 flex flex-col justify-start items-center ">
       <nav className="w-full h-[80px] bg-black flex justify-around items-center font-poppins text-white ">
         <div className="w-[20%] h-full flex justify-center items-center  ">
           <img className="w-[80px] h-[50px] " src={portfolioLogo} alt="" />
-          <p className="ml-[10px]  text-[24px] font-poppins font-[700] ">
-            ebiapollos
-          </p>
-        </div>
+          <p className="ml-[5px]  text-[18px] font-poppins font-[700] ">
+            ebiapollos{' '}
+          </p>{' '}
+        </div>{' '}
         <ul className="w-[40%] h-full flex justify-around items-center ">
-          <li className="text-[24px] font-[700]">Home</li>
-          <li className="text-[24px] font-[400]">About Me</li>
-          <li className="text-[24px] font-[400]">Portfolio</li>
-          <li className="text-[24px] font-[400]">Contact</li>
-        </ul>
+          <li className="text-[18px] font-[700]"> Home </li>{' '}
+          <li className="text-[18px] font-[400]"> About Me </li>{' '}
+          <li className="text-[18px] font-[400]"> Portfolio </li>{' '}
+          <li className="text-[18px] font-[400]"> Contact </li>{' '}
+        </ul>{' '}
         <div className="w-[20%] h-full flex justify-center items-center ">
           <button className="w-[223px] h-[44px] bg-[#393E46] rounded-[5px] text-white flex justify-center items-center text-[10px] font-[600]">
             Download CV{' '}
@@ -51,25 +51,28 @@ function Home() {
               src={downloadIcon}
               alt=""
             />{' '}
-          </button>
-        </div>
-      </nav>
+          </button>{' '}
+        </div>{' '}
+      </nav>{' '}
       <div className="w-[100%] h-[600px] flex justify-center items-center ">
-        <div className="w-[50%] h-full flex flex-col justify-start items-start mt-[100px] ml-[100px] relative left-[50px] ">
+        <div className="w-[47%] h-full flex flex-col justify-start items-start mt-[100px] relative ">
           <div className="w-full ml-[50px] ">
             <img className="w-[100%] " src={helloText} alt="" />
-          </div>
-          <div className="font-[700] text-[44px] font-poppins text-white mt-[50px] ">
+          </div>{' '}
+          <div className="font-[700] text-[28px] font-poppins text-white mt-[50px] ">
             <p>
               I am <br />
-              Ebi-erefa <span className="text-[#00ADB5] ">Apollos</span>
-            </p>
-            <p className="text-[24px] text-[#EEEEEE] font-poppins ">
-              Frontend developer
-            </p>
-          </div>
-        </div>
-        <div className="w-[45%] h-full flex justify-center items-center mr-[70px] relative right-[50px] ">
+              Ebi - erefa <span className="text-[#00ADB5] ">
+                {' '}
+                Apollos{' '}
+              </span>{' '}
+            </p>{' '}
+            <p className="text-[18px] text-[#EEEEEE] font-poppins ">
+              Frontend developer{' '}
+            </p>{' '}
+          </div>{' '}
+        </div>{' '}
+        <div className="w-[45%] h-full flex justify-center items-center relative right-[50px] ">
           <div className="relative w-[80%] h-[100%] flex flex-col justify-start items-center mt-[-100px] ">
             <div className=" w-[70%] h-[350px] relative top-[160px] rounded-b-[50px] rounded-t-[50px] z-10 ">
               <img
@@ -77,39 +80,38 @@ function Home() {
                 src={image1}
                 alt=""
               />
-            </div>
+            </div>{' '}
             <div className="absolute bottom-[0px] w-[100%] h-[60%]">
               <img
                 className="w-full h-full relative  "
                 src={rectangleShape}
                 alt=""
               />
-            </div>
-          </div>
+            </div>{' '}
+          </div>{' '}
           <div className="w-[20%] h-[90%] flex flex-col justify-start items-center ">
             <div className="w-[50%] h-[80%] flex flex-col justify-around items-center ">
               <img className=" " src={followMe} alt="" />
               <img className=" " src={verticalLine} alt="" />
               <img className=" " src={instagramLogo} alt="" />
               <img className=" " src={behacneLogo} alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+            </div>{' '}
+          </div>{' '}
+        </div>{' '}
+      </div>{' '}
       <hr className=" w-[90%] border-1 border-[#00ADB5] relative bottom-[120px] " />
-      <div className="w-[76%] h-[90px] flex flex-col justify-around items-start relative bottom-[100px] ">
-        <p className="text-[#959DA9] font-[700] text-[24px] font-poppins ">
-          Steve Jobs, co-founder of Apple, Inc.
-        </p>
-        <p className="text-[#EEEEEE] font-[700] text-[24px] font-poppins ">
-          Design is not just what it looks like and feels
-          <br /> like. Design is how it works.
-        </p>
-      </div>
-
+      <div className="w-[76%] h-[90px] flex flex-col justify-around items-start relative bottom-[50px] ">
+        <p className="text-[#959DA9] font-[700] text-[18px] font-poppins ">
+          Steve Jobs, co - founder of Apple, Inc.{' '}
+        </p>{' '}
+        <p className="text-[#EEEEEE] font-[700] text-[18px] font-poppins ">
+          Design is not just what it looks like and feels <br /> like.Design is
+          how it works.{' '}
+        </p>{' '}
+      </div>{' '}
       <div className="w-[100%] h-[800px] font-poppins flex flex-col justify-start items-center bg-gray-900 z-10 ">
         <img
-          className="object-cover absolute left-[0px] mix-blend-overlay h-[125%] z-50  "
+          className="object-cover absolute left-[0px] mix-blend-overlay h-[80%] z-50  "
           src={backgroundImage}
           alt=""
         />
@@ -117,9 +119,8 @@ function Home() {
           <img src={whatIDoText} alt="" />
           <p className="text-[40px] text-white font-[700] font-poppins relative bottom-[60px] ">
             What I do
-          </p>
-        </div>
-
+          </p>{' '}
+        </div>{' '}
         <div className="w-[90%] h-[40%] flex justify-around items-center ">
           <div className="w-[200px] h-[200px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img
@@ -127,169 +128,157 @@ function Home() {
               src={icon1}
               alt=""
             />
-            <p>Frondend</p>
-          </div>
+            <p> Frondend </p>{' '}
+          </div>{' '}
           <div className="w-[200px] h-[200px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img
               className="w-[55px] h-[55px] text-[#00ADB5] "
               src={homeIcon}
               alt=""
             />
-            <p>Frondend Engineer</p>
-          </div>
-          <div className="w-[200px] h-[200px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
-            <img
-              className="w-[55px] h-[55px] text-[#00ADB5] "
-              src={icon1}
-              alt=""
-            />
-            <p>Frondend developer</p>
-          </div>
+            <p> Frondend Engineer </p>{' '}
+          </div>{' '}
           <div className="w-[200px] h-[200px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img
               className="w-[55px] h-[55px] text-[#00ADB5] "
               src={icon2}
               alt=""
             />
-            <p>React developer</p>
-          </div>
-        </div>
+            <p> React developer </p>{' '}
+          </div>{' '}
+        </div>{' '}
         <div className="w-[100%] h-[10%] flex flex-col justify-center items-center mt-[100px] ">
           <img src={skillsText} alt="" />
-          <p className="text-[64px] font-[700] text-white font-poppins relative bottom-[80px] ">
-            Skills
-          </p>
-        </div>
+          <p className="text-[54px] font-[700] text-white font-poppins relative bottom-[80px] ">
+            Skills{' '}
+          </p>{' '}
+        </div>{' '}
         <div className="w-[100%] h-[40%] flex flex-col justify-center items-center  ">
-          <div className="w-[45%] h-full flex flex-col justify-around items-center text-white ">
+          <div className="w-[75%] h-full flex flex-col justify-around items-center text-white ">
             <div className="w-[100%] flex justify-between items-center  ">
-              <p>React</p>
+              <p> React </p>{' '}
               <div className="w-[70%] h-[19px] bg-white ">
                 <div className="w-[80%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .
-                </div>
-              </div>
-            </div>
+                  .{' '}
+                </div>{' '}
+              </div>{' '}
+            </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
-              <p>Tailwind CSS</p>
+              <p> Tailwind CSS </p>{' '}
               <div className="w-[70%] h-[19px] bg-white ">
                 <div className="w-[80%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .
-                </div>
-              </div>
-            </div>
+                  .{' '}
+                </div>{' '}
+              </div>{' '}
+            </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
-              <p>Javascript</p>
+              <p> Javascript </p>{' '}
               <div className="w-[70%] h-[19px] bg-white ">
                 <div className="w-[50%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .
-                </div>
-              </div>
-            </div>
+                  .{' '}
+                </div>{' '}
+              </div>{' '}
+            </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
-              <p>HTML 5</p>
+              <p> HTML 5 </p>{' '}
               <div className="w-[70%] h-[19px] bg-white ">
                 <div className="w-[90%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .
-                </div>
-              </div>
-            </div>
+                  .{' '}
+                </div>{' '}
+              </div>{' '}
+            </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
-              <p>CSS3</p>
+              <p> CSS3 </p>{' '}
               <div className="w-[70%] h-[19px] bg-white ">
                 <div className="w-[80%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .
-                </div>
-              </div>
-            </div>
+                  .{' '}
+                </div>{' '}
+              </div>{' '}
+            </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
-              <p>GIT</p>
+              <p> GIT </p>{' '}
               <div className="w-[70%] h-[19px] bg-white ">
                 <div className="w-[60%] h-full bg-[#00ADB5] rounded-r-[50px]  ">
-                  .
-                </div>
-              </div>
-            </div>
-          </div>
+                  .{' '}
+                </div>{' '}
+              </div>{' '}
+            </div>{' '}
+          </div>{' '}
           <div className="w-[100%] h-[10%] flex flex-col justify-center items-center mt-[100px] ">
             <img src={recentWorksText} alt="" />
-            <p className="text-[64px] font-[700] text-white font-poppins relative bottom-[80px] ">
-              Recent Works
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-[100%] h-[800px] flex flex-col justify-start items-center ">
+            <p className="text-[44px] font-[700] text-white font-poppins relative bottom-[70px] ">
+              Recent Works{' '}
+            </p>{' '}
+          </div>{' '}
+        </div>{' '}
+      </div>{' '}
+      <div className="w-[100%] h-[950px] flex flex-col justify-start items-center ">
         <div className="w-[80%] h-[85%] flex justify-around items-center flex-wrap ">
-          <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+          <div className="w-[250px] h-[250px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img className="w-full h-full " src={handout1} alt="" />
-          </div>
-          <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+          </div>{' '}
+          <div className="w-[250px] h-[250px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img className="w-full h-full " src={handout2} alt="" />
-          </div>
-          <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+          </div>{' '}
+          <div className="w-[250px] h-[250px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img className="w-full h-full " src={handout3} alt="" />
-          </div>
-          <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+          </div>{' '}
+          <div className="w-[250px] h-[250px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img className="w-full h-full " src={lendsqrLoginPics} alt="" />
-          </div>
-          <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+          </div>{' '}
+          <div className="w-[250px] h-[250px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img className="w-full h-full " src={lendsqrDashboardPics} alt="" />
-          </div>
-          <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+          </div>{' '}
+          <div className="w-[250px] h-[250px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
             <img className="w-full h-full " src={portfolioPics1} alt="" />
-          </div>
-        </div>
-        <div className="w-[90%] h-[10%] flex justify-center items-center  ">
+          </div>{' '}
+        </div>{' '}
+        <div className="w-[90%] h-[15%] flex justify-center items-center  ">
           <button className="w-[186px] h-[38px] bg-[#393E46] rounded-[5px] text-white flex justify-center items-center text-[10px] font-[600]">
-            View All Works
-          </button>
-        </div>
-      </div>
+            View All Works{' '}
+          </button>{' '}
+        </div>{' '}
+      </div>{' '}
       <div className="w-[100%] h-[700px] flex flex-col justify-center items-center  ">
         <div className="w-[50%] h-[60%] flex justify-center items-center relative">
           <img className="w-full h-full z-10 " src={rectangleShape2} alt="" />
-        </div>
-        <div className="w-[90%] h-[40%] flex justify-center items-center relative bottom-[280px] bg-[#00ADB5]">
-          <div className="w-[40%] h-[100%] z-10 text-white flex flex-col justify-around items-center  ">
-            <p className="text-[35px] font-poppins font-[700] ">Contact me</p>
+        </div>{' '}
+        <div className="w-[90%] h-[40%] flex justify-center items-center relative bottom-[290px] bg-[#00ADB5]">
+          <div className="w-[40%] h-[80%] z-10 text-white flex flex-col justify-around items-center  ">
+            <p className="text-[25px] font-poppins font-[700] "> Contact me </p>{' '}
             <div className="flex justify-center items-center">
               <img
                 className="w-[20px] h-[20px] text-[#EEEEEE] "
                 src={phoneIcon}
                 alt=""
               />
-
               <div className="ml-[10px]">
-                <p className="text-[18px] font-[700] font-poppins ">
-                  Call me
-                  <br />
-                  <span className="text-[14px] font-[400] font-poppins">
-                    +2348038376835
-                  </span>
-                </p>
-              </div>
-            </div>
+                <p className="text-[14px] font-[700] font-poppins ">
+                  Call me <br />
+                  <span className="text-[10px] font-[400] font-poppins">
+                    +2348038376835{' '}
+                  </span>{' '}
+                </p>{' '}
+              </div>{' '}
+            </div>{' '}
             <div className="flex justify-center items-center ml-[50px]">
               <img
                 className="w-[32px] h-[12px] text-[#EEEEEE]"
                 src={emailIcon}
                 alt=""
               />
-              <p className="text-[18px] font-[700] font-poppins ml-[10px]">
-                Email me
-                <br />
-                <span className="text-[14px] font-[400] font-poppins">
-                  doyinapollos@gmail.com
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+              <p className="text-[14px] font-[700] font-poppins ml-[10px]">
+                Email me <br />
+                <span className="text-[10px] font-[400] font-poppins">
+                  doyinapollos @gmail.com{' '}
+                </span>{' '}
+              </p>{' '}
+            </div>{' '}
+          </div>{' '}
+        </div>{' '}
+      </div>{' '}
     </div>
   );
 }
 
-export default Home;
+export default MediumScreen;

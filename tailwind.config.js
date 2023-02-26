@@ -14,6 +14,9 @@ module.exports = {
       colors: {
         'portfolio-red': '#ED2025',
       },
+      backgroundImage: {
+        backgroundTriangle: "url('/assets/svgs/background-image.svg')",
+      },
     },
   },
   variants: {
