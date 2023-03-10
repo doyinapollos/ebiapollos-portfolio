@@ -1,6 +1,9 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/self-closing-comp */
 /* eslint-disable react/button-has-type */
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, { useRef } from 'react';
 import portfolioLogo from '../assets/svgs/portfolio-logo.svg';
 import downloadIcon from '../assets/svgs/download-icon.svg';
 import helloText from '../assets/svgs/hello-text.svg';
@@ -21,15 +24,42 @@ import handout2 from '../assets/images/handout-screen.png';
 import handout1 from '../assets/images/handout-screen2.png';
 import lendsqrLoginPics from '../assets/images/lendsqr-login-pics.png';
 import lendsqrDashboardPics from '../assets/images/lendsqr-dashboard-pics.png';
-import portfolioPics1 from '../assets/images/portfolio-pics1.png';
+import dataVisualize1 from '../assets/images/data-visualize1.png';
 import rectangleShape2 from '../assets/svgs/rectangle-shape-2.svg';
 import phoneIcon from '../assets/svgs/phone-icon.svg';
 import emailIcon from '../assets/svgs/email-icon.svg';
 
 function MobileView() {
+  const contact = useRef(null);
+  const portFolio = useRef(null);
+  const goUp = useRef(null);
+
+  const goToContact = () => {
+    window.scrollTo({
+      top: contact.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+  const goToportFolio = () => {
+    window.scrollTo({
+      top: portFolio.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
+  const goToUp = () => {
+    window.scrollTo({
+      top: goUp.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className="w-full h-auto bg-gray-900 flex flex-col justify-start items-center ">
-      <nav className="w-full h-[80px] bg-black flex justify-around items-center font-poppins text-white ">
+      <nav
+        className="w-full h-[80px] bg-black flex justify-around items-center font-poppins text-white "
+        ref={goUp}
+      >
         <div className="w-[20%] h-full flex justify-center items-center  ">
           <img className="w-[50px] h-[20px] " src={portfolioLogo} alt="" />
           <p className="ml-[5px]  text-[10px] font-poppins font-[700] ">
@@ -37,19 +67,38 @@ function MobileView() {
           </p>{' '}
         </div>{' '}
         <ul className="w-[40%] h-full flex justify-around items-center ">
-          <li className="text-[12px] font-[700]"> Home </li>{' '}
-          <li className="text-[12px] font-[400]"> About Me </li>{' '}
-          <li className="text-[12px] font-[400]"> Contact </li>{' '}
+          <li className="text-[12px] font-[700] cursor-pointer transition duration-500 ease-in-out hover:bg-[#00ADB5] transform hover:-translate-y-1 hover:scale-110] ">
+            {' '}
+            Home{' '}
+          </li>{' '}
+          <li
+            className="text-[12px] font-[400] cursor-pointer transition duration-500 ease-in-out hover:bg-[#00ADB5] transform hover:-translate-y-1 hover:scale-110 "
+            onClick={goToportFolio}
+          >
+            Portfolio{' '}
+          </li>{' '}
+          <li
+            className="text-[12px] font-[400] cursor-pointer transition duration-500 ease-in-out hover:bg-[#00ADB5] transform hover:-translate-y-1 hover:scale-110 "
+            onClick={goToContact}
+          >
+            Contact{' '}
+          </li>{' '}
         </ul>{' '}
         <div className="w-[20%] h-full flex justify-center items-center ">
-          <button className="w-[150px] h-[30px] bg-[#393E46] rounded-[5px] text-white flex justify-center items-center text-[7px] font-[600]">
-            Download CV{' '}
-            <img
-              className="w-[12px] h-[12px] ml-[5px] "
-              src={downloadIcon}
-              alt=""
-            />{' '}
-          </button>{' '}
+          <a
+            href="https://docs.google.com/document/d/1UGQbyNr1VdTNWt4-pvKNwZuQ7oVnVQkZ/edit?usp=share_link&ouid=109017585835242468987&rtpof=true&sd=true"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <button className="w-[100px] h-[30px] bg-[#393E46] rounded-[5px] text-white flex justify-center items-center text-[7px] font-[600] transition duration-500 ease-in-out hover:bg-[#00ADB5] transform hover:-translate-y-1 hover:scale-80 ">
+              See CV{' '}
+              <img
+                className="w-[12px] h-[12px] ml-[5px] animate-bounce "
+                src={downloadIcon}
+                alt=""
+              />{' '}
+            </button>{' '}
+          </a>{' '}
         </div>{' '}
       </nav>{' '}
       <div className="w-[100%] h-[250px] flex justify-center items-center ">
@@ -87,8 +136,8 @@ function MobileView() {
             <div className="w-[90%] h-[80%] flex flex-col justify-around items-center ">
               <img className="h-[30%] " src={followMe} alt="" />
               <img className="w-[100%] h-[10%] " src={verticalLine} alt="" />
-              <img className=" " src={instagramLogo} alt="" />
-              <img className=" " src={behacneLogo} alt="" />
+              <img className="cursor-pointer " src={instagramLogo} alt="" />
+              <img className="cursor-pointer " src={behacneLogo} alt="" />
             </div>{' '}
           </div>{' '}
         </div>{' '}
@@ -157,49 +206,49 @@ function MobileView() {
           <div className="w-[80%] h-full flex flex-col justify-around items-center text-white font-poppins text-[13px] ">
             <div className="w-[100%] flex justify-between items-center  ">
               <p> React </p>{' '}
-              <div className="w-[70%] h-[19px] bg-white ">
-                <div className="w-[80%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .{' '}
+              <div className="w-[70%] h-[19px] bg-white rounded-l-[50px] rounded-r-[50px] ">
+                <div className="w-[80%] h-full bg-[#00ADB5] rounded-l-[50px] rounded-r-[50px] ">
+                  {' '}
                 </div>{' '}
               </div>{' '}
             </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
               <p> Tailwind CSS </p>{' '}
-              <div className="w-[70%] h-[19px] bg-white ">
-                <div className="w-[80%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .{' '}
+              <div className="w-[70%] h-[19px] bg-white rounded-l-[50px] rounded-r-[50px] ">
+                <div className="w-[80%] h-full bg-[#00ADB5] rounded-l-[50px] rounded-r-[50px] ">
+                  {' '}
                 </div>{' '}
               </div>{' '}
             </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
               <p> Javascript </p>{' '}
-              <div className="w-[70%] h-[19px] bg-white ">
-                <div className="w-[50%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .{' '}
+              <div className="w-[70%] h-[19px] bg-white rounded-l-[50px] rounded-r-[50px] ">
+                <div className="w-[50%] h-full bg-[#00ADB5] rounded-l-[50px] rounded-r-[50px] ">
+                  {' '}
                 </div>{' '}
               </div>{' '}
             </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
               <p> HTML 5 </p>{' '}
-              <div className="w-[70%] h-[19px] bg-white ">
-                <div className="w-[90%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .{' '}
+              <div className="w-[70%] h-[19px] bg-white rounded-l-[50px] rounded-r-[50px] ">
+                <div className="w-[90%] h-full bg-[#00ADB5] rounded-l-[50px] rounded-r-[50px] ">
+                  {' '}
                 </div>{' '}
               </div>{' '}
             </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
               <p> CSS3 </p>{' '}
-              <div className="w-[70%] h-[19px] bg-white ">
-                <div className="w-[80%] h-full bg-[#00ADB5] rounded-r-[50px] ">
-                  .{' '}
+              <div className="w-[70%] h-[19px] bg-white rounded-l-[50px] rounded-r-[50px] ">
+                <div className="w-[80%] h-full bg-[#00ADB5] rounded-l-[50px] rounded-r-[50px] ">
+                  {' '}
                 </div>{' '}
               </div>{' '}
             </div>{' '}
             <div className="w-[100%] flex justify-between items-center ">
               <p> GIT </p>{' '}
-              <div className="w-[70%] h-[19px] bg-white ">
-                <div className="w-[60%] h-full bg-[#00ADB5] rounded-r-[50px]  ">
-                  .{' '}
+              <div className="w-[70%] h-[19px] bg-white rounded-l-[50px] rounded-r-[50px] ">
+                <div className="w-[60%] h-full bg-[#00ADB5] rounded-l-[50px] rounded-r-[50px]  ">
+                  {' '}
                 </div>{' '}
               </div>{' '}
             </div>{' '}
@@ -212,26 +261,89 @@ function MobileView() {
           </div>{' '}
         </div>{' '}
       </div>{' '}
-      <div className="w-[100%] h-[650px] flex flex-col justify-start items-center ">
+      <div
+        className="w-[100%] h-[650px] flex flex-col justify-start items-center "
+        ref={portFolio}
+      >
         <div className="w-[80%] h-[85%] flex justify-around items-center flex-wrap ">
-          <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
-            <img className="w-full h-full " src={handout1} alt="" />
-          </div>{' '}
-          <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
-            <img className="w-full h-full " src={handout2} alt="" />
-          </div>{' '}
-          <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
-            <img className="w-full h-full " src={handout3} alt="" />
-          </div>{' '}
-          <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
-            <img className="w-full h-full " src={lendsqrLoginPics} alt="" />
-          </div>{' '}
-          <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
-            <img className="w-full h-full " src={lendsqrDashboardPics} alt="" />
-          </div>{' '}
-          <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
-            <img className="w-full h-full " src={portfolioPics1} alt="" />
-          </div>{' '}
+          <a
+            href="https://handout-stutern.web.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+              <img
+                className="w-full h-full cursor-pointer animate-pulse "
+                src={handout1}
+                alt=""
+              />
+            </div>{' '}
+          </a>{' '}
+          <a
+            href="https://handout-stutern.web.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+              <img
+                className="w-full h-full cursor-pointer animate-pulse "
+                src={handout2}
+                alt=""
+              />
+            </div>{' '}
+          </a>{' '}
+          <a
+            href="https://handout-stutern.web.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+              <img
+                className="w-full h-full cursor-pointer animate-pulse "
+                src={handout3}
+                alt=""
+              />
+            </div>{' '}
+          </a>{' '}
+          <a
+            href="https://lendsqr-frontend.web.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+              <img
+                className="w-full h-full cursor-pointer animate-pulse "
+                src={lendsqrLoginPics}
+                alt=""
+              />
+            </div>{' '}
+          </a>{' '}
+          <a
+            href="https://lendsqr-frontend.web.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+              <img
+                className="w-full h-full cursor-pointer animate-pulse "
+                src={lendsqrDashboardPics}
+                alt=""
+              />
+            </div>{' '}
+          </a>{' '}
+          <a
+            href="https://ebiapollos-world-data.web.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
+              <img
+                className="w-full h-full cursor-pointer animate-pulse "
+                src={dataVisualize1}
+                alt=""
+              />
+            </div>{' '}
+          </a>{' '}
         </div>{' '}
         <div className="w-[90%] h-[10%] flex justify-center items-center  ">
           <button className="w-[166px] h-[30px] bg-[#393E46] rounded-[5px] text-white flex justify-center items-center text-[10px] font-[500]">
@@ -239,7 +351,10 @@ function MobileView() {
           </button>{' '}
         </div>{' '}
       </div>{' '}
-      <div className="w-[100%] h-[400px] flex flex-col justify-center items-center  ">
+      <div
+        className="w-[100%] h-[400px] flex flex-col justify-center items-center  "
+        ref={contact}
+      >
         <div className="w-[90%] h-[60%] flex justify-center items-center">
           <img className="w-full h-full z-10 " src={rectangleShape2} alt="" />
         </div>{' '}
@@ -274,6 +389,12 @@ function MobileView() {
                 </span>{' '}
               </p>{' '}
             </div>{' '}
+            <button
+              className="w-[50px] h-[20px] font-poppins text-[8px] bg-[#00ADB5] rounded-[4px] "
+              onClick={goToUp}
+            >
+              Go Up{' '}
+            </button>{' '}
           </div>{' '}
         </div>{' '}
       </div>{' '}
