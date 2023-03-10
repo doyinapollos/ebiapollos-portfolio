@@ -22,7 +22,7 @@ import handout2 from '../assets/images/handout-screen.png';
 import handout1 from '../assets/images/handout-screen2.png';
 import lendsqrLoginPics from '../assets/images/lendsqr-login-pics.png';
 import lendsqrDashboardPics from '../assets/images/lendsqr-dashboard-pics.png';
-import portfolioPics1 from '../assets/images/portfolio-pics1.png';
+import dataVisualize1 from '../assets/images/data-visualize1.png';
 import homeIcon from '../assets/svgs/home-icon.svg';
 import icon2 from '../assets/svgs/icon2.svg';
 import backgroundImage from '../assets/svgs/background-image.svg';
@@ -230,7 +230,7 @@ function MediumScreen() {
             <img className="w-full h-full " src={lendsqrDashboardPics} alt="" />
           </div>{' '}
           <div className="w-[250px] h-[250px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
-            <img className="w-full h-full " src={portfolioPics1} alt="" />
+            <img className="w-full h-full " src={dataVisualize1} alt="" />
           </div>{' '}
         </div>{' '}
         <div className="w-[90%] h-[15%] flex justify-center items-center  ">
