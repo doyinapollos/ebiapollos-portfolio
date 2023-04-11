@@ -21,7 +21,7 @@ import icon2 from '../assets/svgs/icon2.svg';
 import backgroundImage from '../assets/svgs/background-image.svg';
 import handout3 from '../assets/images/h-screen3.png';
 import handout2 from '../assets/images/handout-screen.png';
-import handout1 from '../assets/images/handout-screen2.png';
+import techFrontPage from '../assets/images/tech-front-page.png';
 import lendsqrLoginPics from '../assets/images/lendsqr-login-pics.png';
 import lendsqrDashboardPics from '../assets/images/lendsqr-dashboard-pics.png';
 import dataVisualize1 from '../assets/images/data-visualize1.png';
@@ -267,14 +267,14 @@ function MobileView() {
       >
         <div className="w-[80%] h-[85%] flex justify-around items-center flex-wrap ">
           <a
-            href="https://handout-stutern.web.app/"
+            href="https://techtime-landingpage.web.app/"
             rel="noreferrer"
             target="_blank"
           >
             <div className="w-[130px] h-[150px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
               <img
                 className="w-full h-full cursor-pointer animate-pulse "
-                src={handout1}
+                src={techFrontPage}
                 alt=""
               />
             </div>{' '}

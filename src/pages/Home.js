@@ -21,9 +21,9 @@ import recentWorksText from '../assets/svgs/recent-works-text.svg';
 import rectangleShape2 from '../assets/svgs/rectangle-shape-2.svg';
 import phoneIcon from '../assets/svgs/phone-icon.svg';
 import emailIcon from '../assets/svgs/email-icon.svg';
+import techFrontPage from '../assets/images/tech-front-page.png';
 import handout3 from '../assets/images/h-screen3.png';
 import handout2 from '../assets/images/handout-screen.png';
-import handout1 from '../assets/images/handout-screen2.png';
 import lendsqrLoginPics from '../assets/images/lendsqr-login-pics.png';
 import lendsqrDashboardPics from '../assets/images/lendsqr-dashboard-pics.png';
 import dataVisualize1 from '../assets/images/data-visualize1.png';
@@ -289,7 +289,7 @@ function Home() {
       >
         <div className="w-[80%] h-[85%] flex justify-around items-center flex-wrap ">
           <a
-            href="https://handout-stutern.web.app/"
+            href="https://techtime-landingpage.web.app/"
             rel="noreferrer"
             target="_blank"
           >
@@ -297,7 +297,7 @@ function Home() {
               <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
                 <img
                   className="w-full h-full rounded-[10px] "
-                  src={handout1}
+                  src={techFrontPage}
                   alt=""
                 />
               </div>{' '}
