@@ -97,7 +97,7 @@ function Home() {
         </ul>{' '}
         <div className="w-[20%] h-full flex justify-center items-center ">
           <a
-            href="https://docs.google.com/document/d/1UGQbyNr1VdTNWt4-pvKNwZuQ7oVnVQkZ/edit?usp=share_link&ouid=109017585835242468987&rtpof=true&sd=true"
+            href="https://docs.google.com/document/d/1NQM3XMKmMfTiHNTjUZhiis6YKupcHkcY/edit"
             rel="noreferrer"
             target="_blank"
           >
