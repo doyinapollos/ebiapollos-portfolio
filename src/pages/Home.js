@@ -22,11 +22,11 @@ import rectangleShape2 from '../assets/svgs/rectangle-shape-2.svg';
 import phoneIcon from '../assets/svgs/phone-icon.svg';
 import emailIcon from '../assets/svgs/email-icon.svg';
 import techFrontPage from '../assets/images/tech-front-page.png';
-import handout3 from '../assets/images/h-screen3.png';
 import handout2 from '../assets/images/handout-screen.png';
 import lendsqrLoginPics from '../assets/images/lendsqr-login-pics.png';
-import lendsqrDashboardPics from '../assets/images/lendsqr-dashboard-pics.png';
 import dataVisualize1 from '../assets/images/data-visualize1.png';
+import imageGallery from '../assets/images/image-gallery-screen.png';
+import movieDiscovery from '../assets/images/movie-discovery-app-screen.png';
 import homeIcon from '../assets/svgs/home-icon.svg';
 import icon2 from '../assets/svgs/icon2.svg';
 import backgroundImage from '../assets/svgs/background-image.svg';
@@ -319,7 +319,7 @@ function Home() {
             </button>{' '}
           </a>{' '}
           <a
-            href="https://handout-stutern.web.app/"
+            href="https://image-gallery-app-rose.vercel.app/"
             rel="noreferrer"
             target="_blank"
           >
@@ -327,7 +327,7 @@ function Home() {
               <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
                 <img
                   className="w-full h-full rounded-[10px] "
-                  src={handout3}
+                  src={imageGallery}
                   alt=""
                 />
               </div>{' '}
@@ -349,7 +349,7 @@ function Home() {
             </button>{' '}
           </a>{' '}
           <a
-            href="https://lendsqr-frontend.web.app/dashboard"
+            href="https://movie-discovery-app.vercel.app/"
             rel="noreferrer"
             target="_blank"
           >
@@ -357,7 +357,7 @@ function Home() {
               <div className="w-[300px] h-[300px] rounded-[5px] bg-[#222831] text-white flex flex-col justify-around items-center ">
                 <img
                   className="w-full h-full rounded-[10px] "
-                  src={lendsqrDashboardPics}
+                  src={movieDiscovery}
                   alt=""
                 />
               </div>{' '}
